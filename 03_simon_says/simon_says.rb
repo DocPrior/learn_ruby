@@ -13,3 +13,9 @@ def repeat(string, num = 2)
   end
   return new_string.strip
 end
+
+def start_of_word(string, num)
+  new_string = ""
+  new_string = string[0, num]
+  return new_string
+end
