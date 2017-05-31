@@ -19,3 +19,8 @@ def start_of_word(string, num)
   new_string = string[0, num]
   return new_string
 end
+
+def first_word(string)
+  string_arr = string.split
+  return string_arr[0]
+end
