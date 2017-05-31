@@ -6,6 +6,10 @@ def shout(string)
   return "#{string.upcase}"
 end
 
-def repeat(string)
-  return "#{string} #{string}"
+def repeat(string, num = 2)
+  new_string = ""
+  num.times do
+    new_string << string + " "
+  end
+  return new_string.strip
 end
