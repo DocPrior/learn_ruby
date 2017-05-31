@@ -24,3 +24,20 @@ def first_word(string)
   string_arr = string.split
   return string_arr[0]
 end
+
+def titleize(string)
+  string_arr = string.split
+  new_string =""
+  lower_words = ["and","the", "over"]
+    string_arr.each_with_index do |string, index|
+      if lower_words.include?(string)
+        new_string << string + " "
+      else
+        new_string << string.capitalize + " "
+      end
+      if index == 0
+        new_string = new_string.capitalize
+      end
+    end
+  return new_string.strip
+end
